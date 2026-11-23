@@ -8,6 +8,20 @@
 
 ---
 
+## 下载
+
+当前 GitHub 上**没有**已发布安装包（无 Release）。`package.json` 版本为 **1.2.0**。Windows 打包可用 `npm run package`（`electron-builder --win --x64`），产物默认在 `release/`。本轮因磁盘不足未打包上传。工作区曾有更早的 **1.0.0** Setup 切片，版本低于当前源码，**不会**作为 1.2.0 发行资产上传。
+
+## 界面截图
+
+以下三张是在 Linux 箱子上启动 **AI Model Designer 1.2.0** 后截取的真实产品窗口（`npm run dev`，使用内置离线模拟，无需 API Key；样例提示为「一个电商系统，包含用户、商品、订单、支付、物流」）。状态栏显示「离线模拟」。设置页未打开，画面中无 API Key。
+
+![主工作台](docs/screenshots/01-workbench.png)
+
+![逻辑数据模型画布](docs/screenshots/02-canvas-model.png)
+
+![AI 助手面板](docs/screenshots/03-ai-panel-or-export.png)
+
 ## 功能特性
 
 ### 1. 多种模型类型
@@ -181,3 +195,31 @@ src/
 
 ## 许可证
 MIT
+
+---
+
+## English
+
+**AI Model Designer 1.2.0** is an Electron desktop app for conceptual / logical / physical / UML / architecture modeling, with optional AI generation and export.
+
+### Download
+
+No published installer on GitHub Releases. Package with `npm run package` (output under `release/`). This pass did not build or upload packages (disk). Older 1.0.0 Setup fragments found locally were not uploaded as 1.2.0 assets.
+
+### Screenshots
+
+These three images are real product-window captures of **AI Model Designer 1.2.0** running on Linux (`npm run dev`, built-in offline mock, no API key). The sample prompt was an ecommerce system with users, products, orders, payments, and logistics. The status bar shows offline mock mode. Settings was not opened; no API keys are visible.
+
+![Main workbench](docs/screenshots/01-workbench.png)
+
+![Logical model canvas](docs/screenshots/02-canvas-model.png)
+
+![AI assistant panel](docs/screenshots/03-ai-panel-or-export.png)
+
+### Run from source
+
+```
+npm install
+# or: npm install --legacy-peer-deps
+npm run dev
+```
