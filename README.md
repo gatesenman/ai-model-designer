@@ -12,17 +12,15 @@
 
 当前 GitHub 上**没有**已发布安装包（无 Release）。`package.json` 版本为 **1.2.0**。Windows 打包可用 `npm run package`（`electron-builder --win --x64`），产物默认在 `release/`。本轮因磁盘不足未打包上传。工作区曾有更早的 **1.0.0** Setup 切片，版本低于当前源码，**不会**作为 1.2.0 发行资产上传。
 
-## 界面截图（待补真实图）
+## 界面截图
 
-仓库内目前只有 `build/icon.png`（应用图标）。图标、logo 和装饰图**不能**代替产品界面截图。仓库与本机工作区均未找到真实产品窗口截图，因此**不**嵌入生成图或图标充数。
+以下三张是在 Linux 箱子上启动 **AI Model Designer 1.2.0** 后截取的真实产品窗口（`npm run dev`，使用内置离线模拟，无需 API Key；样例提示为「一个电商系统，包含用户、商品、订单、支付、物流」）。状态栏显示「离线模拟」。设置页未打开，画面中无 API Key。
 
-以下路径已在 README 预留，待用桌面在真实运行的应用中截取后再放入（不要用假图占位）：
+![主工作台](docs/screenshots/01-workbench.png)
 
-- `docs/screenshots/01-workbench.png` — 主工作台（左栏项目/资源管理器 + 中间画布 + 右侧属性）
-- `docs/screenshots/02-canvas-model.png` — 已生成或打开一个模型后的画布（可用内置模拟模板，无需 API Key）
-- `docs/screenshots/03-ai-panel-or-export.png` — AI 对话面板或导出/生成产物界面
+![逻辑数据模型画布](docs/screenshots/02-canvas-model.png)
 
-截取说明见 [`docs/screenshots/README.md`](docs/screenshots/README.md)。请遮盖设置里的 API Key。
+![AI 助手面板](docs/screenshots/03-ai-panel-or-export.png)
 
 ## 功能特性
 
@@ -208,9 +206,15 @@ MIT
 
 No published installer on GitHub Releases. Package with `npm run package` (output under `release/`). This pass did not build or upload packages (disk). Older 1.0.0 Setup fragments found locally were not uploaded as 1.2.0 assets.
 
-### Screenshots (reserved)
+### Screenshots
 
-The repository currently has only `build/icon.png`. Icons are not product UI. No real window captures were found, so this README does **not** embed generated or decorative images. Reserved paths: `docs/screenshots/01-workbench.png`, `02-canvas-model.png`, `03-ai-panel-or-export.png`. See `docs/screenshots/README.md`. Mask API keys.
+These three images are real product-window captures of **AI Model Designer 1.2.0** running on Linux (`npm run dev`, built-in offline mock, no API key). The sample prompt was an ecommerce system with users, products, orders, payments, and logistics. The status bar shows offline mock mode. Settings was not opened; no API keys are visible.
+
+![Main workbench](docs/screenshots/01-workbench.png)
+
+![Logical model canvas](docs/screenshots/02-canvas-model.png)
+
+![AI assistant panel](docs/screenshots/03-ai-panel-or-export.png)
 
 ### Run from source
 
